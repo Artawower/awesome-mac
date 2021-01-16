@@ -29,6 +29,9 @@ brew tap mananapr/cfiles && brew install cfiles
 # tmux
 brew install tmux
 
+# GoTop
+brew tap cjbassi/gotop
+brew install gotop
 
 # Yaba
 brew tap koekeishiya/formulae
