@@ -25,6 +25,10 @@ Awesome environment for development with mac os.
 #+ATTR_HTML: :style margin-left: auto; margin-right: auto;
 [[/screenshots/dev.png]]
 
+#+ATTR_HTML: :style margin-left: auto; margin-right: auto;
+[[/screenshots/start_page.gif]]
+
+
 * Installation
 For installing to pure system use _install.sh_ script.
 Warning, this script will override some files inside .config folder, .zshrc, .SpaceVim.d etc.
