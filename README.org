@@ -20,10 +20,10 @@ Awesome environment for development with mac os.
 
 * Screenshots
 #+ATTR_HTML: :style margin-left: auto; margin-right: auto;
-[[/screenshots/void.png]
+[[/screenshots/void.png]]
 
 #+ATTR_HTML: :style margin-left: auto; margin-right: auto;
-[[/screenshots/dev.png]
+[[/screenshots/dev.png]]
 
 * Installation
 For installing to pure system use _install.sh_ script.
