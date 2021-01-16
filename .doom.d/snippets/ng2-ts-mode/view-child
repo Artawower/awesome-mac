@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: @ViewChild
+# uuid: @ViewChild
+# key: @vc
+# condition: t
+# --
+
+  @ViewChild('$1', { static: $2 }) $3: TemplateRef<any>;

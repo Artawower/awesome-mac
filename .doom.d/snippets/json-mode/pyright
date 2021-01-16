@@ -1,0 +1,30 @@
+# -*- mode: snippet -*-
+# name: venv
+# key: venv
+# --
+{
+  "exclude": [
+    "**/node_modules",
+    "**/__pycache__",
+    "**/static",
+    "**/redis-data",
+    "**/data",
+    "venv"
+  ],
+  "venvPath": "./venv/",
+  "venv": "venv",
+  "reportMissingImports": true,
+  "reportMissingTypeStubs": false,
+
+  "pythonVersion": "3.9",
+  "pythonPlatform": "Darwin",
+
+  "executionEnvironments": [
+    {
+      "root": "./",
+      "venv": "./",
+      "pythonVersion": "3.9",
+      "pythonPlatform": "Darwin"
+    }
+  ]
+}

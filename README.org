@@ -1,0 +1,31 @@
+#+TITLE: Awesome mac os
+
+Awesome environment for development with mac os.
+
+* Dependencies
++ [[http://tracesof.net/ubersicht][ubersicht]]
++ [[https://spacevim.org/][Space vim]]
++ [[https://github.com/hlissner/doom-emacs][Doom emacs]]
++ [[https://neovim.io/][neovim]]
++ [[https://github.com/tmux/tmux/wiki][tmux]]
++ [[https://www.zsh.org/][zsh]]
+  - [[https://ohmyz.sh/][Oh My Zsh]]
+  - [[https://github.com/agnoster/agnoster-zsh-theme][Agnoster theme]]
++ Firefox
+  - [[https://addons.mozilla.org/ru/firefox/addon/vimium-ff/?utm_source=addons.mozilla.org&utm_medium=referral&utm_content=search][vim keybinding]]
+  - [[https://addons.mozilla.org/ru/firefox/addon/material-palenight/?utm_source=addons.mozilla.org&utm_medium=referral&utm_content=search][template]]
++ [[https://github.com/mananapr/cfiles][cfiles]]
+
+
+
+* Screenshots
+#+ATTR_HTML: :style margin-left: auto; margin-right: auto;
+[[/screenshots/void.png]
+
+#+ATTR_HTML: :style margin-left: auto; margin-right: auto;
+[[/screenshots/dev.png]
+
+* Installation
+For installing to pure system use _install.sh_ script.
+Warning, this script will override some files inside .config folder, .zshrc, .SpaceVim.d etc.
+I created this script only for install all deps into new devices.

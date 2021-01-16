@@ -1,0 +1,280 @@
+#=============================================================================
+# dark_powered.toml --- dark powered configuration example for SpaceVim
+# Copyright (c) 2016-2020 Wang Shidong & Contributors
+# Author: Wang Shidong < wsdjeg at 163.com >
+# URL: https://spacevim.org
+# License: GPLv3
+#=============================================================================
+
+# All SpaceVim option below [option] section
+[options]
+    # set spacevim theme. by default colorscheme layer is not loaded,
+    # if you want to use more colorscheme, please load the colorscheme
+    # layer
+    # colorscheme = "palenight"
+    colorscheme = "onedark"
+    colorscheme_bg = "dark"
+    # Disable guicolors in basic mode, many terminal do not support 24bit
+    # true colors
+    enable_guicolors = true
+    # Disable statusline separator, if you want to use other value, please
+    # install nerd fonts
+    statusline_separator = "arrow"
+    statusline_iseparator = "arrow"
+    buffer_index_type = 4
+    guifont = "Ligamonacop Nerd Font:14"
+    enable_tabline_filetype_icon = true
+    enable_statusline_mode = false
+
+    filemanager = "nerdtree"
+
+    # Bootstrap before 
+    bootstrap_before = "myspacevim#before"
+    bootstrap_after = 'myspacevim#after'
+
+    # Git blamer 
+    blamer_enabled = 1
+    blamer_show_in_insert_modes = 0
+    disabled_plugins = ['deoplete.nvim']
+
+    autocomplete_method = "prettier"
+
+    project_rooter_patterns = ['_darcs/', '.hg/', '.bzr/', '.svn/', '!packages/', 'tsconfig.json', 'tsconfig.app.json']
+    max_column = 120
+    synmaxcol = 120
+    norelativenumber = true
+
+# Enable autocomplete layer
+# [[layers]]
+#   name = 'autocomplete'
+#   auto_completion_return_key_behavior = "complete"
+#   auto_completion_tab_key_behavior = "smart"
+
+[[layers]]
+    name = "fzf"
+
+[[layers]]
+  name = 'shell'
+  default_position = 'top'
+  default_height = 30
+
+[[layers]]
+  name='colorscheme'
+
+#""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+# 
+#      											EDITOR
+#
+#""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+[[custom_plugins]]
+ # Icons for nerdtree
+ repo = 'ryanoasis/vim-devicons' 
+ merged = false
+
+[[custom_plugins]]
+ # Fast commenting
+ repo = 'tomtom/tcomment_vim'
+ merged = false
+
+[[custom_plugins]]
+ # Snippets
+ repo = 'SirVer/ultisnips' 
+ merged = false
+
+
+[[custom_plugins]]
+ # Snipets core
+ repo = 'honza/vim-snippets' 
+ merged = false
+
+
+[[custom_plugins]]
+ # Wakatime, time monitor
+ repo = 'wakatime/vim-wakatime' 
+ merged = false
+
+[[custom_plugins]]
+ # Colorised brackets
+ repo = 'frazrepo/vim-rainbow' 
+ merged = false
+
+
+[[custom_plugins]]
+ # Visual highlighting for marks
+ repo = 'kshenoy/vim-signature'
+ merged = false
+
+[[custom_plugins]]
+ # Fast surrounding text
+ repo = 'tpope/vim-surround'
+ merged = false
+
+#""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+# 
+#      											LANGUAGES 
+#
+#""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+[[custom_plugins]]
+ # debuger for everything
+ repo = 'puremourning/vimspector'
+ merged = false
+
+[[custom_plugins]]
+ # A lot of languages and frameworks syntax
+ repo = 'sheerun/vim-polyglot'
+ merged = false
+
+[[custom_plugins]]
+ # Support for going to definition and languages servers
+ repo = 'neoclide/coc.nvim'
+ merged = false
+
+[[custom_plugins]]
+ repo = 'prettier/vim-prettier'
+ do = 'yarn install'
+ for = ['javascript', 'typescript', 'css', 'less', 'scss', 'json', 'graphql', 'markdown', 'vue', 'yaml', 'html']
+ merged = false
+
+
+#***************************ANGULAR****************************
+# [[custom_plugins]]
+#  repo = 'curist/vim-angular-template'
+#  merged = false
+#
+# [[custom_plugins]]
+#  repo = 'burnettk/vim-angular'
+#  merged = false
+
+[[custom_plugins]]
+ repo = 'iamcco/coc-angular'
+ merged = false
+
+
+#***************************** JS *****************************
+[[custom_plugins]]
+ repo = 'pangloss/vim-javascript'
+ merged = false
+#**************************** HTML ****************************
+[[custom_plugins]]
+ repo = 'alvan/vim-closetag'
+ merged = false
+
+[[custom_plugins]]
+ repo = 'mattn/emmet-vim'
+ merged = false
+
+[[custom_plugins]]
+ repo = 'digitaltoad/vim-pug'
+ merged = false
+
+#*************************** GOLANG ***************************
+[[custom_plugins]]
+ repo = 'fatih/vim-go'
+ merged = false
+
+#*************************** PYTHON ***************************
+[[custom_plugins]]
+ # Autocomplete/syntax
+ repo = 'davidhalter/jedi-vim'
+ merged = false
+
+[[custom_plugins]]
+ # Venv support
+ repo = 'jmcantrell/vim-virtualenv'
+ merged = false
+
+[[custom_plugins]]
+ repo = 'nvie/vim-flake8'
+ merged = false
+
+#*************************** DEVOPS ***************************
+
+[[custom_plugins]]
+ repo = 'chr4/nginx.vim'
+ merged = false
+
+#*************************** DEVOPS ***************************
+[[custom_plugins]]
+ # Show last editor in current line
+ repo = 'APZelos/blamer.nvim'
+ merged = false
+
+[[custom_plugins]]
+ # Very powerfull utilit for git
+ repo = 'tpope/vim-fugitive'
+ merged = false
+
+[[custom_plugins]]
+ # Jumping between changes, showing change of left line
+ repo = 'airblade/vim-gitgutter'
+ merged = false
+
+[[custom_plugins]]
+ # Github/lab GBrowse feature
+ repo = 'tpope/vim-rhubarb'
+ merged = false
+
+[[custom_plugins]]
+ # Support GBrowse for bitbucket
+ repo = 'tommcdo/vim-fubitive'
+ merged = false
+
+ [[custom_plugins]]
+     repo = 'junegunn/fzf.vim'
+     merged = false
+
+[[custom_plugins]]
+    repo = 'junegunn/fzf'
+    merged = false
+
+[[custom_plugins]]
+    repo = 'iamcco/markdown-preview.nvim'
+    merged = false
+    build = 'cd app && yarn install'
+    on_ft = [ 'markdown', 'pandoc.markdown', 'rmd' ]
+
+[[custom_plugins]]
+    repo = 'a-x-/vim-cyr'
+    merged = false
+
+[[custom_plugins]]
+    repo = 'posva/vim-vue'
+    merged = false
+#""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+# 
+# 											 THEMES/COLORSCHEMES
+#
+#""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+# [[custom_plugins]]
+#     repo = 'flazz/vim-colorschemes'
+#     merged = false
+# Big pack of themes
+[[custom_plugins]]
+    repo = 'NLKNguyen/papercolor-theme'
+    merged = false
+
+[[custom_plugins]]
+    repo = 'xolox/vim-misc'
+    merged = false
+
+[[custom_plugins]]
+    repo = 'xolox/vim-colorscheme-switcher'
+    merged = false
+
+[[custom_plugins]]
+    repo = 'sonph/onehalf'
+    rtp = 'vim'
+    merged = false
+
+[[custom_plugins]]
+    repo = 'ayu-theme/ayu-vim'
+    merged = false
+
+[[custom_plugins]]
+    repo = 'kyoz/purify'
+    merged = false
+
+[[custom_plugins]]
+    repo = 'xolox/vim-notes'
+    merged = false
