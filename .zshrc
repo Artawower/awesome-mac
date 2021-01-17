@@ -69,6 +69,11 @@ ZSH_THEME="agnoster"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
+export ZPLUG_HOME=/usr/local/opt/zplug
+source $ZPLUG_HOME/init.zsh
+
+zplug "softmoth/zsh-vim-mode"
+
 plugins=(git zsh-completions osx npm zsh-autosuggestions zsh-syntax-highlighting ssh-agent)
 
 source $ZSH/oh-my-zsh.sh
@@ -85,7 +90,7 @@ alias cargo='~/.cargo/bin/cargo'
 alias python=python3
 alias pip=pip3
 alias virtualenv='python3 -m virtualenv'
-source "$HOME/zsh-vim-mode/zsh-vim-mode.plugin.zsh"
 
-export ZPLUG_HOME=/usr/local/opt/zplug
-source $ZPLUG_HOME/init.zsh
+export LC_ALL=en_IN.UTF-8
+export LANG=en_IN.UTF-8
+ 
