@@ -31,7 +31,9 @@ brew install wget
 curl -L https://sw.kovidgoyal.net/kitty/installer.sh | sh /dev/stdin
 
 # Cfiles - simple cli file manager
-brew tap mananapr/cfiles && brew install cfiles
+# brew tap mananapr/cfiles && brew install cfiles
+# Ranger - another file manager for cli
+brew install ranger
 
 # tmux
 brew install tmux
@@ -75,6 +77,11 @@ cp .zshrc ~/.zshrc
 # Install fonts
 cp ./fonts/* /Library/Fonts/
 
+# Ranger icons
+git clone https://github.com/alexanderjeurissen/ranger_devicons ~/.config/ranger/plugins/ranger_devicons
+echo "default_linemode devicons" >> $HOME/.config/ranger/rc.conf
+
+
 ln -sv ~/.config/kitty ~/Library/Preferences/kitty
 # Tmux
 ln -sv ~/.config/tmux/tmux.conf ~/.tmux.conf
@@ -105,3 +112,4 @@ brew install ripgrep
 
 # Wakatime
 sudo pip3 install wakatime
+pip install pillow ranger-fm

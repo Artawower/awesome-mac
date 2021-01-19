@@ -1,21 +1,31 @@
-#+TITLE: Awesome mac os
+#+TITLE: Awesome mac os workspace
 
-Awesome environment for development with mac os.
+* Description
+Awesome mac os environment inspired by OneDark theme and focused on cli and keyboard management.
 
 * Dependencies
 1. [[http://tracesof.net/uebersicht/][ubersicht]]
-2. [[https://spacevim.org/][Space vim]]
+2. Terminal: [[https://sw.kovidgoyal.net/kitty/][kitty(+ ligatures)]]/[[https://github.com/alacritty/alacritty][alacritty]]
 3. [[https://github.com/hlissner/doom-emacs][Doom emacs]]
-4. [[https://neovim.io/][neovim]]
-5. [[https://github.com/tmux/tmux/wiki][tmux]]
-6. [[https://www.zsh.org/][zsh]]
+4. [[https://spacevim.org/][Space vim]]
+5. [[https://neovim.io/][neovim]]
+6. [[https://github.com/tmux/tmux/wiki][tmux]]
+7. [[https://www.zsh.org/][zsh]]
    - [[https://ohmyz.sh/][Oh My Zsh]]
    - [[https://github.com/agnoster/agnoster-zsh-theme][Agnoster theme]]
-7. Firefox
+   - [[https://github.com/zsh-users/zsh-syntax-highlighting][syntax highlight]]
+   - [[https://github.com/zsh-users/zsh-autosuggestions][autosuggestions]]
+   - [[https://github.com/zsh-users/zsh-completions][completions]]
+8. Browser: Firefox
    - [[https://addons.mozilla.org/ru/firefox/addon/vimium-ff/?utm_source=addons.mozilla.org&utm_medium=referral&utm_content=search][vim keybinding]]
    - [[https://addons.mozilla.org/ru/firefox/addon/material-palenight/?utm_source=addons.mozilla.org&utm_medium=referral&utm_content=search][template]]
-8. [[https://github.com/mananapr/cfiles][cfiles]]
-9. [[https://github.com/BurntSushi/ripgrep][ripgrep]]
+9. File Manager: [[https://github.com/mananapr/cfiles][cfiles]]/[[https://github.com/ranger/ranger][ranger]]
+10. Search: [[https://github.com/BurntSushi/ripgrep][ripgrep]]
+11. Fonts: Jetbrains Mono(+ Nerd Font patch) /Monaco (+ ligatures and nerd font patch)
+12. Window manager: [[https://github.com/koekeishiya/yabai][Yabai]]
+13. Hotkey daemon: [[https://github.com/koekeishiya/skhd][skhd]]
+14. [[https://github.com/Spotifyd/spotifyd][Spotify]]
+15. Activity monitor: [[https://github.com/cjbassi/gotop][gotop]]
 
 
 
@@ -31,9 +41,11 @@ Awesome environment for development with mac os.
 
 
 * Installation
-__Before installation __ visit [[http://tracesof.net/ubersicht/][ubersicht]] and install
+*Before installation*
++ visit [[http://tracesof.net/ubersicht/][ubersicht]] and install it
++ disable csrutil from recovery (Command + R) mode by `csrutil disable` (necessary for yabai)
 
-Create .
-For installing to pure system use _install.sh_ script.
-Warning, this script will override some files inside .config folder, .zshrc, .SpaceVim.d etc.
-I created this script only for install all deps into new devices.
+For installing to pure system use _init.sh_ script.
+
+*Warning, this script will override some files inside .config folder, .zshrc, .SpaceVim.d etc.
+I created this script only for install all deps into new devices. I recomend your to copy necessary configs*
