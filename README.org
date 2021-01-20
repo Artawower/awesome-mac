@@ -1,7 +1,7 @@
 #+TITLE: Awesome mac os workspace
 
 * Description
-Awesome mac os environment inspired by OneDark theme and focused on cli and keyboard management.
+Awesome mac os environment inspired by OneDark theme and focused on *CLI* and keyboard navigation.
 
 * Dependencies
 1. [[http://tracesof.net/uebersicht/][ubersicht]]
@@ -25,7 +25,7 @@ Awesome mac os environment inspired by OneDark theme and focused on cli and keyb
 11. Fonts: Jetbrains Mono(+ Nerd Font patch) /Monaco (+ ligatures and nerd font patch)
 12. Window manager: [[https://github.com/koekeishiya/yabai][Yabai]]
 13. Hotkey daemon: [[https://github.com/koekeishiya/skhd][skhd]]
-14. [[https://github.com/Spotifyd/spotifyd][Spotifyd]]
+14. [[https://github.com/Rigellute/spotify-tui][spotify-tui]] ([[https://github.com/Spotifyd/spotifyd][or Spotifyd]])
 15. Activity monitor: [[https://github.com/cjbassi/gotop][gotop]]
 
 
@@ -52,6 +52,9 @@ For installing to pure system use _init.sh_ script.
 I created this script only for install all utilits into new devices. I recommend your to copy necessary configs manually*
 * Keybindings
 ** Workspace
+|--------------------+-------------------------------------------------|
+| Keymap             | Action                                          |
+|--------------------+-------------------------------------------------|
 | Option + s         | Navigate to (s)ocial tab                        |
 | Option + b         | Navigate to (b)rowser tab                       |
 | Option + d         | Navigate to (d)ev tab                           |
@@ -62,3 +65,10 @@ I created this script only for install all utilits into new devices. I recommend
 | Option + F         | Make current window fullsize (inside workspace) |
 | Option + S + F     | Make current window fullsize (osx behaviour)    |
 | Option + [0..9]    | Switch to workspace by N                        |
+| Option + CMD + f   | Open/focus Firefox                              |
+| Option + CMD + t   | Open/focus Telegram client                      |
+| Option + CMD + s   | Open/focus Skype                                |
+| Option + CMD + m   | Open/focus Spotify                              |
+| Option + CMD + r   | Optn ranger file manager                        |
+| Yabai management   |                                                 |
+|--------------------+-------------------------------------------------|

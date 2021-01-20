@@ -52,6 +52,9 @@ brew services start yabai
 brew install koekeishiya/formulae/skhd
 brew services start skhd
 
+# Spotify-tui
+brew install spotify-tui
+
 # ranger zip/unzip
 brew install atool
 # ZSH
