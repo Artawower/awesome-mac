@@ -42,7 +42,7 @@ brew install tmux
 brew tap cjbassi/gotop
 brew install gotop
 
-# Yaba
+# Yabai
 brew tap koekeishiya/formulae
 brew install koekeishiya/formulae/yabai
 sudo yabai --load-sa
@@ -52,7 +52,8 @@ brew services start yabai
 brew install koekeishiya/formulae/skhd
 brew services start skhd
 
-
+# ranger zip/unzip
+brew install atool
 # ZSH
 brew install zsh
 rm -rf ~/.oh-my-zsh

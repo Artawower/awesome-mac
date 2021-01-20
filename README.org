@@ -5,7 +5,7 @@ Awesome mac os environment inspired by OneDark theme and focused on cli and keyb
 
 * Dependencies
 1. [[http://tracesof.net/uebersicht/][ubersicht]]
-2. Terminal: [[https://sw.kovidgoyal.net/kitty/][kitty(+ ligatures)]]/[[https://github.com/alacritty/alacritty][alacritty]]
+2. Terminal: [[https://sw.kovidgoyal.net/kitty/][kitty(+ ligatures) (or ]][[https://github.com/alacritty/alacritty][alacritty]])
 3. [[https://github.com/hlissner/doom-emacs][Doom emacs]]
 4. [[https://spacevim.org/][Space vim]]
 5. [[https://neovim.io/][neovim]]
@@ -19,12 +19,13 @@ Awesome mac os environment inspired by OneDark theme and focused on cli and keyb
 8. Browser: Firefox
    - [[https://addons.mozilla.org/ru/firefox/addon/vimium-ff/?utm_source=addons.mozilla.org&utm_medium=referral&utm_content=search][vim keybinding]]
    - [[https://addons.mozilla.org/ru/firefox/addon/material-palenight/?utm_source=addons.mozilla.org&utm_medium=referral&utm_content=search][template]]
-9. File Manager: [[https://github.com/mananapr/cfiles][cfiles]]/[[https://github.com/ranger/ranger][ranger]]
+9. File Manager: [[https://github.com/ranger/ranger][ranger]]
+   - [[icons]]
 10. Search: [[https://github.com/BurntSushi/ripgrep][ripgrep]]
 11. Fonts: Jetbrains Mono(+ Nerd Font patch) /Monaco (+ ligatures and nerd font patch)
 12. Window manager: [[https://github.com/koekeishiya/yabai][Yabai]]
 13. Hotkey daemon: [[https://github.com/koekeishiya/skhd][skhd]]
-14. [[https://github.com/Spotifyd/spotifyd][Spotify]]
+14. [[https://github.com/Spotifyd/spotifyd][Spotifyd]]
 15. Activity monitor: [[https://github.com/cjbassi/gotop][gotop]]
 
 
@@ -47,5 +48,17 @@ Awesome mac os environment inspired by OneDark theme and focused on cli and keyb
 
 For installing to pure system use _init.sh_ script.
 
-*Warning, this script will override some files inside .config folder, .zshrc, .SpaceVim.d etc.
-I created this script only for install all deps into new devices. I recomend your to copy necessary configs*
+*Warning: this script will override some files inside .config folder, .zshrc, .SpaceVim.d etc.
+I created this script only for install all utilits into new devices. I recommend your to copy necessary configs manually*
+* Keybindings
+** Workspace
+| Option + s         | Navigate to (s)ocial tab                        |
+| Option + b         | Navigate to (b)rowser tab                       |
+| Option + d         | Navigate to (d)ev tab                           |
+| Option + RET       | Open new kitty in current workspace             |
+| Option + CMD + RET | Open kitty or focus on exist window             |
+| Option + a         | Open alacritty in current workspace             |
+| Option + CMD + a   | Open alacritty or focus on exist window         |
+| Option + F         | Make current window fullsize (inside workspace) |
+| Option + S + F     | Make current window fullsize (osx behaviour)    |
+| Option + [0..9]    | Switch to workspace by N                        |
