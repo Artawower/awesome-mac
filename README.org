@@ -32,16 +32,16 @@ Awesome mac os environment inspired by OneDark theme and focused on *CLI* and ke
 
 * Screenshots
 #+ATTR_HTML: :style margin-left: auto; margin-right: auto;
-[[/screenshots/hello.webp]]
+[[/screenshots/hello.png]]
 
 #+ATTR_HTML: :style margin-left: auto; margin-right: auto;
-[[/screenshots/dev.webp]]
+[[/screenshots/dev.png]]
 
 #+ATTR_HTML: :style margin-left: auto; margin-right: auto;
-[[/screenshots/fun.webp]]
+[[/screenshots/fun.png]]
 
 #+ATTR_HTML: :style margin-left: auto; margin-right: auto;
-[[/screenshots/social.webp]]
+[[/screenshots/social.png]]
 
 #+ATTR_HTML: :style margin: auto;
 [[/screenshots/start_page.gif]]
