@@ -5,6 +5,7 @@ Awesome mac os environment inspired by OneDark theme and focused on *CLI* and ke
 
 * Dependencies
 1. [[http://tracesof.net/uebersicht/][ubersicht]]
+   - [[https://github.com/Jean-Tinland/simple-bar][simple bar (for yabai)]]
 2. Terminal: [[https://sw.kovidgoyal.net/kitty/][kitty(+ ligatures) (or ]][[https://github.com/alacritty/alacritty][alacritty]])
 3. [[https://github.com/hlissner/doom-emacs][Doom emacs]]
 4. [[https://spacevim.org/][Space vim]]
@@ -51,7 +52,7 @@ Awesome mac os environment inspired by OneDark theme and focused on *CLI* and ke
 
 * Installation
 *Before installation*
-+ visit [[http://tracesof.net/ubersicht/][ubersicht]] and install it
++ visit [[http://tracesof.net/ubersicht/][ubersicht]] and install it, after that install [[https://github.com/Jean-Tinland/simple-bar][simple-bar]]
 + disable csrutil from recovery (Command + R) mode by typing `csrutil disable` (necessary for yabai)
 
 For installing to pure system use _init.sh_ script.
