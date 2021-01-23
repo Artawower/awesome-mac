@@ -1,0 +1,53 @@
+@import "./variables";
+
+.links {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: $common-big-offset;
+  width: 100%;
+
+  .link {
+    cursor: pointer;
+    display: block;
+    height: $icon-size;
+    transition: all 0.2s ease-in-out;
+    width: $icon-size;
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
+}
+
+.github {
+  background: url("../imgs/git.svg") center;
+  background-size: cover;
+}
+
+.github {
+  background: url("../imgs/git.svg") center;
+}
+
+.ld {
+  background: url("../imgs/002-linkedin.svg") center;
+}
+
+.home {
+  background: url("../imgs/017-nextdoor.svg") center;
+}
+
+.twitter {
+  background: url("../imgs/027-twitter.svg") center;
+}
+
+.youtube {
+  background: url("../imgs/038-youtube.svg") center;
+}
+
+.reddit {
+  background: url("../imgs/040-reddit.svg") center;
+}
+
+.link {
+  background-size: cover;
+}

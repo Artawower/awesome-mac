@@ -1,0 +1,11 @@
+version: "3"
+
+
+services:
+  
+  homepage:
+    restart: always
+    build:
+      context: .
+    ports:
+      - 3111:3000

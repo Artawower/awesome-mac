@@ -1,0 +1,186 @@
+.links {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 32px;
+  width: 100%; }
+  .links .link {
+    cursor: pointer;
+    display: block;
+    height: 32px;
+    transition: all 0.2s ease-in-out;
+    width: 32px; }
+    .links .link:hover {
+      transform: scale(1.2); }
+
+.github {
+  background: url("../imgs/git.svg") center;
+  background-size: cover; }
+
+.github {
+  background: url("../imgs/git.svg") center; }
+
+.ld {
+  background: url("../imgs/002-linkedin.svg") center; }
+
+.home {
+  background: url("../imgs/017-nextdoor.svg") center; }
+
+.twitter {
+  background: url("../imgs/027-twitter.svg") center; }
+
+.youtube {
+  background: url("../imgs/038-youtube.svg") center; }
+
+.reddit {
+  background: url("../imgs/040-reddit.svg") center; }
+
+.link {
+  background-size: cover; }
+
+* {
+  font-family: "JetBrains Mono"; }
+  *:focus {
+    border: 0;
+    outline: none; }
+
+body {
+  background: #282c34;
+  color: #fff;
+  margin: 0;
+  overflow: hidden;
+  padding: 0; }
+
+@keyframes fadein {
+  50% {
+    opacity: 0; } }
+
+.startpage-wrapper {
+  align-items: center;
+  background: #282c34;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+  width: 100%; }
+  .startpage-wrapper .center-wizard {
+    border-radius: 14px;
+    margin-top: -140px;
+    max-width: 600px;
+    min-width: 360px;
+    padding: 14px 14px;
+    position: relative;
+    z-index: 5; }
+    .startpage-wrapper .center-wizard .wizard-content {
+      display: none; }
+    .startpage-wrapper .center-wizard .show {
+      display: block; }
+    .startpage-wrapper .center-wizard .hellower {
+      position: relative;
+      text-align: left; }
+      .startpage-wrapper .center-wizard .hellower .carriage {
+        animation: fadein 1.5s infinite;
+        color: #98be65;
+        font-weight: 900; }
+    .startpage-wrapper .center-wizard .search-wrapper {
+      position: relative; }
+      .startpage-wrapper .center-wizard .search-wrapper input.search {
+        border: none;
+        border-radius: 14px;
+        box-sizing: border-box;
+        display: block;
+        padding: 6px 12px;
+        padding-left: calc(22px + 8px);
+        position: relative;
+        width: 100%; }
+      .startpage-wrapper .center-wizard .search-wrapper::before {
+        background: url("../imgs/google.svg");
+        background-size: cover;
+        content: "";
+        display: block;
+        height: 22px;
+        left: 4px;
+        position: absolute;
+        top: 3px;
+        width: 22px;
+        z-index: 1; }
+  .startpage-wrapper .navigations {
+    bottom: 8px;
+    position: absolute; }
+
+.left-sidebar {
+  left: 0;
+  max-width: 280px;
+  position: absolute;
+  top: 0; }
+  .left-sidebar .tradingview-widget-container {
+    margin: 0;
+    transform: scale(0.7); }
+
+.clock {
+  left: 24px;
+  top: 0;
+  z-index: 2; }
+  .clock #timer {
+    font-size: 64px; }
+  .clock #timer,
+  .clock #date {
+    color: #51afef;
+    margin: 0;
+    padding: 0;
+    text-align: center; }
+
+.fly-letter {
+  animation: fly 2s linear;
+  bottom: 12px;
+  color: #98be65;
+  font-size: 24px;
+  height: 16px;
+  position: absolute;
+  width: 16px;
+  z-index: 0; }
+
+@keyframes fly {
+  0% {
+    bottom: 12px; }
+  25% {
+    bottom: 100vh; }
+  40% {
+    bottom: calc(100vh - 160px);
+    opacity: 0.8; }
+  60% {
+    bottom: 100vh;
+    opacity: 0.6; }
+  70% {
+    bottom: calc(100vh - 80px);
+    opacity: 0.4; }
+  90% {
+    bottom: 105vh;
+    opacity: 0; }
+  100% {
+    bottom: 105vh; } }
+
+.footer {
+  bottom: -40px;
+  display: none;
+  position: absolute;
+  width: 100%;
+  z-index: 8; }
+  .footer.show {
+    display: block; }
+
+#show-pane {
+  background: #bbc2cf;
+  border-radius: 8px;
+  bottom: 22px;
+  cursor: pointer;
+  height: 4px;
+  margin: auto;
+  margin-bottom: 4px;
+  position: absolute;
+  transition: all 0.2s ease-in-out;
+  width: 120px; }
+  #show-pane:hover {
+    transform: scale(1.2); }
+  #show-pane.opened {
+    bottom: 180px; }

@@ -56,6 +56,9 @@ For installing to pure system use _init.sh_ script.
 
 *Warning: this script will override some files inside .config folder, .zshrc, .SpaceVim.d etc.
 I created this script only for install all utilits into new devices. I recommend your to copy necessary configs manually*
+
+*Firefox start page*
+Open _firefox-startpage/dist/index.html_ and install as home page or docker-compose up --build -d for running as service (for opening page in new tab)
 * Keybindings
 |-------------------------+-----------------------------------------------------|
 | *Keymap*                  | *Action*                                              |
