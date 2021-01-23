@@ -21,7 +21,7 @@ Awesome mac os environment inspired by OneDark theme and focused on *CLI* and ke
    - [[https://addons.mozilla.org/ru/firefox/addon/vimium-ff/?utm_source=addons.mozilla.org&utm_medium=referral&utm_content=search][vim keybinding]]
    - [[https://addons.mozilla.org/ru/firefox/addon/material-palenight/?utm_source=addons.mozilla.org&utm_medium=referral&utm_content=search][template]]
 9. File Manager: [[https://github.com/ranger/ranger][ranger]]
-   - [[icons]]
+   - [[https://github.com/alexanderjeurissen/ranger_devicons][icons]]
 10. Search: [[https://github.com/BurntSushi/ripgrep][ripgrep]]
 11. Fonts: Jetbrains Mono(+ Nerd Font patch) /Monaco (+ ligatures and nerd font patch)
 12. Window manager: [[https://github.com/koekeishiya/yabai][Yabai]]
