@@ -32,43 +32,88 @@ Awesome mac os environment inspired by OneDark theme and focused on *CLI* and ke
 
 * Screenshots
 #+ATTR_HTML: :style margin-left: auto; margin-right: auto;
-[[/screenshots/void.png]]
+[[/screenshots/hello.webp]]
 
 #+ATTR_HTML: :style margin-left: auto; margin-right: auto;
-[[/screenshots/dev.png]]
+[[/screenshots/dev.webp]]
 
 #+ATTR_HTML: :style margin-left: auto; margin-right: auto;
+[[/screenshots/fun.webp]]
+
+#+ATTR_HTML: :style margin-left: auto; margin-right: auto;
+[[/screenshots/social.webp]]
+
+#+ATTR_HTML: :style margin: auto;
 [[/screenshots/start_page.gif]]
 
 
 * Installation
 *Before installation*
 + visit [[http://tracesof.net/ubersicht/][ubersicht]] and install it
-+ disable csrutil from recovery (Command + R) mode by `csrutil disable` (necessary for yabai)
++ disable csrutil from recovery (Command + R) mode by typing `csrutil disable` (necessary for yabai)
 
 For installing to pure system use _init.sh_ script.
 
 *Warning: this script will override some files inside .config folder, .zshrc, .SpaceVim.d etc.
 I created this script only for install all utilits into new devices. I recommend your to copy necessary configs manually*
 * Keybindings
-** Workspace
-|--------------------+-------------------------------------------------|
-| Keymap             | Action                                          |
-|--------------------+-------------------------------------------------|
-| Option + s         | Navigate to (s)ocial tab                        |
-| Option + b         | Navigate to (b)rowser tab                       |
-| Option + d         | Navigate to (d)ev tab                           |
-| Option + RET       | Open new kitty in current workspace             |
-| Option + CMD + RET | Open kitty or focus on exist window             |
-| Option + a         | Open alacritty in current workspace             |
-| Option + CMD + a   | Open alacritty or focus on exist window         |
-| Option + F         | Make current window fullsize (inside workspace) |
-| Option + S + F     | Make current window fullsize (osx behaviour)    |
-| Option + [0..9]    | Switch to workspace by N                        |
-| Option + CMD + f   | Open/focus Firefox                              |
-| Option + CMD + t   | Open/focus Telegram client                      |
-| Option + CMD + s   | Open/focus Skype                                |
-| Option + CMD + m   | Open/focus Spotify                              |
-| Option + CMD + r   | Optn ranger file manager                        |
-| Yabai management   |                                                 |
-|--------------------+-------------------------------------------------|
+|-------------------------+-----------------------------------------------------|
+| *Keymap*                  | *Action*                                              |
+|-------------------------+-----------------------------------------------------|
+| *Navigation*              |                                                     |
+| Option - s              | Navigate to social tab                              |
+| Option - b              | Navigate to browser tab                             |
+| Option - d              | Navigate to dev tab                                 |
+| Option - p              | Navigate to debug                                   |
+| Option - [0..5]         | Switch to workspace by N                            |
+|-------------------------+-----------------------------------------------------|
+| *Window management*       |                                                     |
+| Option + F              | Make current window fullsize (inside workspace)     |
+| Option + S + F          | Make current window fullsize (osx behaviour)        |
+| LCtrl + Alt - h         | Resize left (40px)                                  |
+| LCtrl + Alt - j         | Resize bottom (40px)                                |
+| LCtrl + Alt - k         | Resize top (40px)                                   |
+| LCtrl + Alt - l         | Resize right (40px)                                 |
+| Shift + Alt - c         | Toggle window floating and center align             |
+| LCtrl + Alt - 0         | Auto balance between windows                        |
+| LCtrl + Alt - g         | Toggle padding between windows                      |
+| LCtrl + Alt - b         | Enable window borders                               |
+| LCtrl + Alt + Shift - b | Disable window borders                              |
+| Alt - r                 | Rotate window left                                  |
+| Shift + Alt + r         | Rotate window right                                 |
+| Shift + Alt - x         | Swap across x axis                                  |
+| Shift + Alt - y         | Swap across y axis                                  |
+| Shift + Aly - space     | Toggle floating                                     |
+| CMD + Alt - l           | Disable opacity                                     |
+| CMD + Alt - o           | Enable opacity                                      |
+|                         |                                                     |
+| Shift + LCtrl + Alt - h | Set insertion point for docused container to left   |
+| Shift + LCtrl + Alt - j | Set insertion point for docused container to bottom |
+| Shift + LCtrl + Alt - k | Set insertion point for docused container to top    |
+| Shift + LCtrl + Alt - l | Set insertion point for docused container to left   |
+|                         |                                                     |
+| CMD + Alt - x           | Close current window                                |
+|-------------------------+-----------------------------------------------------|
+| *Workspaces*              |                                                     |
+| LCtrl + Alt - c         | Create new workspace                                |
+| LCtrl + Alt - d         | Delete current workspace                            |
+| LCtrl + Alt - left      | Switch to left workspace                            |
+| LCtrl + Alt - right     | Switch to right workspace                           |
+|-------------------------+-----------------------------------------------------|
+| *Applications*            |                                                     |
+| Option - RET            | Open new kitty in current workspace                 |
+| Option + CMD - RET      | Open kitty or focus on exist window                 |
+| Option - a              | Open alacritty in current workspace                 |
+| Option + CMD - a        | Open alacritty or focus on exist window             |
+| Option + CMD - e        | Open emacs                                          |
+|                         |                                                     |
+|                         |                                                     |
+| Option + CMD - f        | Open/focus Firefox                                  |
+| Option + CMD - t        | Open/focus Telegram client                          |
+| Option + CMD - s        | Open/focus Skype                                    |
+| Option + CMD - m        | Open Spotify (CLI)                                  |
+| Option + CMD - v        | Open nvim (CLI)                                     |
+| Option + CMD - r        | Open ranger file manager (CLI)                      |
+|                         |                                                     |
+| Shift + LCtrl + alt - r | Restart Yabai                                       |
+|-------------------------+-----------------------------------------------------|

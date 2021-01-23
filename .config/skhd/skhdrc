@@ -120,6 +120,9 @@ alt - p : yabai -m space --focus debug
 alt - return : open -na kitty.app
 cmd + alt - return : open -a kitty.app
 
+alt - a : open -na alacritty.app
+cmd + alt - a : open -a alacritty.app
+
 cmd + alt - f : yabai -m space --focus browser;\
                 open -a firefox.app
 
@@ -134,6 +137,12 @@ cmd + alt - s : yabai -m space --focus social;\
 
 cmd + alt - e : yabai -m space --focus dev; \
                export $(dbus-launch) && emacs
+
+cmd + alt - r : open -na kitty --args "ranger"
+
+cmd + alt - v : open -na kitty --args "nvim"
+
+cmd + alt - m : open -na kitty --args "spt"
 
 # Close window
 cmd + alt - x : yabai -m window --close
